@@ -1,6 +1,8 @@
 /* font-family: "Raleway", sans-serif;
 font-family: "Roboto", sans-serif; */
 
+/* reset */
+
 body{
     font-family: "Roboto", sans-serif;
     color: #434455;
@@ -8,9 +10,51 @@ body{
 }
 ul, ol{
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6, p{
+margin: 0;
 }
 a{
     text-decoration: none;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+button{
+    cursor: pointer;
+    font-family: inherit;
+}
+
+/* common */
+
+.container{
+    max-width: 1158px;
+    padding: 0 15 px;
+    margin: 0 auto;
+}
+
+/* header */
+
+.page-header{
+    border-bottom: 1px solid #e7e9fc;
+}
+.header-container{
+    display: flex;
+    align-items: center;
+}
+.header-nav{
+    display: flex;
+    align-items: center;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 .logo{
 font-family: "Raleway", sans-serif;
@@ -21,10 +65,16 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #4d5ae5;
 }
+.header-logo{
+    padding: 24px 0;
+    margin-right: 76px;
+}
 .header-logo .logo-part{
     color: #2e2f42;
 }
 .nav-link{
+padding: 24px 0;
+display: block;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
@@ -33,8 +83,16 @@ color: #2e2f42;
 }
 .contacts{
 font-style: normal;
+margin-left: auto;
+}
+.contacts-list{
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 .contacts-link{
+display: block;
+padding: 24px 0;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
@@ -46,18 +104,29 @@ color: #434455;
 .contacts-link:focus{
 color: #404bbf;
 }
-.container{
-background: #2e2f42;
+
+/* section 1 */
+
+.solutions{
+    background-color: #2e2f42;
+    padding: 188px 0;
+    text-align: center;
 }
 .main-title{
-color: #fff;
+padding-top: 188px;
 font-weight: 700;
 font-size: 56px;
 line-height: 1.07;
 letter-spacing: 0.02em;
 text-align: center;
+max-width: 496px;
+color: #fff;
+margin: 0 auto 48px auto;
+
+
 }
 .main-title-button{
+padding-top: 48px;
 color: #fff;
 font-weight: 500;
 font-size: 16px;
@@ -65,27 +134,73 @@ line-height: 1.5;
 letter-spacing: 0.04em;
 cursor: pointer;
 background-color: #4d5ae5;
+text-align: center;
+display: block;
+margin: 0 auto;
+border: none;
+border-radius: 4px;
+padding: 16px 32px;
+height: 56px;
+min-width: 169px;
+
+
 }
 .main-title-button:hover,
 .main-title-button:focus{
 background: #404bbf;
 }
+
+/* section 2 */
+
+.principles{
+    background-color: #f4f4fd;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 .benefits-title{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.principles-list{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+.principles-item{
+    width: calc((100% - 72px) / 4);
 }
 .benefits-text{
-font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
-letter-spacing: 0.02em;
 color: #434455;
+text-align: center;
+letter-spacing: 0.02em;
 }
+
+/* section 3 */
+
 .container-third{
 background-color: #f4f4fd;
+padding-top: 120px;
+padding-bottom: 120px;
 }
 .second-title{
 font-weight: 700;
@@ -95,9 +210,41 @@ letter-spacing: 0.02em;
 text-align: center;
 text-transform: capitalize;
 color: #2e2f42;
+margin-bottom: 72px;
+}
+.info-list{
+    display: flex;
+    gap: 24px;
 }
 .photo{
 background-color: #FFFFFF;
+border-radius: 0px, 0px, 4px, 4px;
+width: calc((100% - 72px) / 4);
+}
+.signature{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+/* section 4 */
+.portfolio{
+    background-color: #FFFFFF;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+.portfolio-item{
+    width: calc((100% - 48px) / 3);
+}
+.servise-card{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 .page-footer{
 background-color:  #2e2f42;
