@@ -218,8 +218,8 @@ margin-bottom: 72px;
 }
 .photo{
 background-color: #FFFFFF;
-border-radius: 0px, 0px, 4px, 4px;
 width: calc((100% - 72px) / 4);
+border-radius: 0px 0px 4px 4px;
 }
 .signature{
     padding-top: 32px;
@@ -260,7 +260,7 @@ align-items: baseline;
 .footer-logo .logo-part{
 color: #f4f4fd;
 display: inline-block;
-margin-bottom: 16px;
+margin-bottom: 16px; 
 font-weight: 700;
 font-size: 18px;
 line-height: 1.17;
