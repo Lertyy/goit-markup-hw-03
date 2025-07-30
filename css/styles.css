@@ -259,8 +259,6 @@ align-items: baseline;
 }
 .footer-logo .logo-part{
 color: #f4f4fd;
-display: inline-block;
-margin-bottom: 16px; 
 font-weight: 700;
 font-size: 18px;
 line-height: 1.17;
@@ -268,6 +266,10 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #f4f4fd;
 display: inline-block;
+}
+.footer-logo{
+display: inline-block;
+margin-bottom: 16px; 
 }
 .logo-part:hover,
 .logo-part:active{
